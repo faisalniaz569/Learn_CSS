@@ -1,0 +1,161 @@
+** CSS Attribute Selectors
+
+
+* CSS [attribute] Selector
+
+Example 1:
+
+Html:
+
+<a href="https://www.w3schools.com">w3schools.com</a>
+<a href="http://www.disney.com" target="_blank">disney.com</a>
+<a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+
+Css:
+
+a[target] {
+  background-color: yellow;
+}
+
+
+* CSS [attribute="value"] Selector
+
+Example 2:
+
+Html:
+
+<a href="https://www.w3schools.com">w3schools.com</a>
+<a href="http://www.disney.com" target="_blank">disney.com</a>
+<a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+
+
+Css:
+
+a[target=_blank] {
+  background-color: yellow;
+}
+
+
+* CSS [attribute~="value"] Selector
+
+Example 3:
+
+Html:
+
+<img src="klematis.jpg" title="klematis flower" width="150" height="113">
+<img src="img_flwr.gif" title="flower" width="224" height="162">
+<img src="img_tree.gif" title="tree" width="200" height="358">
+
+
+Css:
+
+[title~=flower] {
+  border: 5px solid yellow;
+}
+
+
+* CSS [attribute|="value"] Selector
+
+Example 4:
+
+Html:
+
+<h1 class="top-header">Welcome</h1>
+<p class="top-text">Hello world!</p>
+<p class="topcontent">Are you learning CSS?</p>
+
+
+Css:
+
+[class|=top] {
+  background: yellow;
+}
+
+
+* CSS [attribute^="value"] Selector
+
+Html:
+
+<h1 class="top-header">Welcome</h1>
+<p class="top-text">Hello world!</p>
+<p class="topcontent">Are you learning CSS?</p>
+
+Css:
+
+[class^="top"] {
+  background: yellow;
+}
+
+
+* CSS [attribute$="value"] Selector
+
+Html:
+
+<div class="first_test">The first div element.</div>
+<div class="second">The second div element.</div>
+<div class="my-test">The third div element.</div>
+<p class="mytest">This is some text in a paragraph.</p>
+
+
+Css:
+
+[class$="test"] {
+  background: yellow;
+}
+
+
+* CSS [attribute*="value"] Selector
+
+Html:
+
+<div class="first_test">The first div element.</div>
+<div class="second">The second div element.</div>
+<div class="my-test">The third div element.</div>
+<p class="mytest">This is some text in a paragraph.</p>
+
+Css:
+
+[class*="te"] {
+  background: yellow;
+}
+
+### Styling forms
+
+Html:
+
+<h2>Styling Forms</h2>
+
+<form name="input" action="" method="get">
+  Firstname:<input type="text" name="Name" value="Peter" size="20">
+  Lastname:<input type="text" name="Name" value="Griffin" size="20">
+  <input type="button" value="Example Button">
+</form>
+
+Css:
+
+input[type=text] {
+  width: 150px;
+  display: block;
+  margin-bottom: 10px;
+  background-color: yellow;
+}
+
+input[type=button] {
+  width: 120px;
+  margin-left: 35px;
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

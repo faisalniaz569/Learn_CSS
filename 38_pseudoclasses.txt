@@ -1,0 +1,213 @@
+********************
+
+CHAPTER: 38
+
+********************
+
+** What are Pseudo-classes?
+
+For example, it can be used to:
+
+Style an element when a user mouses over it
+Style visited and unvisited links differently
+Style an element when it gets focus
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+</style>
+</head>
+<body>
+
+<h2>Styling a link depending on state</h2>
+
+<p><b><a href="default.asp" target="_blank">This is a link</a></b></p>
+<p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
+<p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
+
+</body>
+</html>
+
+
+** Pseudo-classes and HTML Classes
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+a.highlight:hover {
+  color: #ff0000;
+  font-size: 22px;
+}
+</style>
+</head>
+<body>
+
+<h2>Pseudo-classes and HTML Classes</h2>
+
+<p>When you hover over the first link below, it will change color and font size:</p>
+
+<p><a class="highlight" href="css_syntax.asp">CSS Syntax</a></p>
+
+<p><a href="default.asp">CSS Tutorial</a></p>
+
+</body>
+</html>
+
+
+** Hover on <div>
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  background-color: green;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+div:hover {
+  background-color: blue;
+}
+</style>
+</head>
+<body>
+
+<p>Mouse over the div element below to change its background color:</p>
+
+<div>Mouse Over Me</div>
+
+</body>
+</html>
+
+** Simple Tooltip Hover
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+  display: none;
+  background-color: yellow;
+  padding: 20px;
+}
+
+div:hover p {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<div>Hover over this div element to show the p element
+  <p>Tada! Here I am!</p>
+</div>
+
+</body>
+</html>
+
+
+** Match the first <p> element
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p:first-child {
+  color: blue;
+}
+</style>
+</head>
+<body>
+
+<p>This is some text.</p>
+<p>This is some text.</p>
+
+<div>
+  <p>This is some text.</p>
+  <p>This is some text.</p>
+</div>
+
+</body>
+</html>
+
+
+** Match the first <i> element in all <p> elements
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p i:first-child {
+  color: blue;
+}
+</style>
+</head>
+<body>
+
+<p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+<p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+
+</body>
+</html>
+
+
+** Match all <i> elements in all first child <p> elements
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p:first-child i {
+  color: blue;
+}
+</style>
+</head>
+<body>
+
+<p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+<p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+
+<div>
+  <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+  <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+</div>
+
+</body>
+</html>

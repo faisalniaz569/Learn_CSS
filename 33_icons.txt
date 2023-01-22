@@ -1,0 +1,311 @@
+********************
+
+CHAPTER: 33
+
+********************
+
+** icons
+
+Font Awesome Icons -
+=====================
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<i class="fas fa-clock"></i>
+
+<br>
+
+<i class="fas fa-clock" style="font-size:120px;color:#2196F3"></i>
+<i class="far fa-clock" style="font-size:120px;color:#2196F3"></i>
+
+</body>
+</html>
+
+===============================================================================================================
+
+Sizing Icons -
+
+Example 2:
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Font Awesome Icons</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<!--Get your own code at fontawesome.com-->
+</head>
+<body>
+
+<i class="fas fa-clock fa-xs"></i>
+<i class="fas fa-clock fa-sm"></i>
+<i class="fas fa-clock fa-lg"></i>
+<i class="fas fa-clock fa-2x"></i>
+<i class="fas fa-clock fa-5x"></i>
+<i class="fas fa-clock fa-10x"></i>
+
+</body>
+</html>
+
+===============================================================================================================
+
+List Icons -
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Font Awesome Icons</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<!--Get your own code at fontawesome.com-->
+</head>
+<body style="font-size:24px;">
+
+<ul class="fa-ul">
+  <li><span class="fa-li"><i class="fas fa-check-square"></i></span>List Item</li>
+  <li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span>List Item</li>
+  <li><span class="fa-li"><i class="fas fa-square"></i></span>List Item</li>
+</ul>
+
+</body>
+</html>
+
+===============================================================================================================
+
+Animated icons -
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Font Awesome Icons</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<!--Get your own code at fontawesome.com-->
+</head>
+<body style="font-size:24px;">
+
+<i class="fas fa-spinner fa-spin"></i>
+<i class="fas fa-circle-notch fa-spin"></i>
+<i class="fas fa-sync-alt fa-spin"></i>
+<i class="fas fa-cog fa-spin"></i>
+<i class="fas fa-cog fa-pulse"></i>
+<i class="fas fa-spinner fa-pulse"></i>
+
+</body>
+</html>
+
+=================================================================================================================
+
+Rotated and Flipped Icons -
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Font Awesome Icons</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<!--Get your own code at fontawesome.com-->
+</head>
+<body style="font-size:24px;">
+
+<i class="fas fa-horse"></i>
+<i class="fas fa-horse fa-rotate-90"></i>
+<i class="fas fa-horse fa-rotate-180"></i>
+<i class="fas fa-horse fa-rotate-270"></i>
+<i class="fas fa-horse fa-flip-horizontal"></i>
+<i class="fas fa-horse fa-flip-vertical"></i>
+
+</body>
+</html>
+
+=================================================================================================================
+
+Stacked Icons -
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Font Awesome Icons</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<!--Get your own code at fontawesome.com-->
+</head>
+<body>
+
+<span class="fa-stack fa-lg">
+  <i class="fas fa-circle fa-stack-2x"></i>
+  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+</span>
+fa-twitter (inverse) on fa-circle (solid)<br>
+
+<span class="fa-stack fa-lg">
+  <i class="far fa-circle fa-stack-2x"></i>
+  <i class="fab fa-twitter fa-stack-1x"></i>
+</span>
+fa-twitter on fa-circle (regular)<br>
+
+<span class="fa-stack fa-lg">
+  <i class="fas fa-camera fa-stack-1x"></i>
+  <i class="fas fa-ban fa-stack-2x text-danger" style="color:red;"></i>
+</span>
+fa-ban on fa-camera
+
+</body>
+</html>
+
+==================================================================================================================
+
+Fixed Width Icons -
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Font Awesome Icons</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<!--Get your own code at fontawesome.com-->
+</head>
+<body style="font-size:24px;">
+
+<p>Fixed Width:</p>
+<div><i class="fas fa-arrows-alt-v fa-fw"></i> Icon 1</div>
+<div><i class="fas fa-band-aid fa-fw"></i> Icon 2</div>
+<div><i class="fab fa-bluetooth-b fa-fw"></i> Icon 3</div>
+
+<p>Without Fixed Width:</p>
+<div><i class="fas fa-arrows-alt-v"></i> Icon 1</div>
+<div><i class="fas fa-band-aid"></i> Icon 2</div>
+<div><i class="fab fa-bluetooth-b"></i> Icon 3</div>
+
+</body>
+</html>
+
+==================================================================================================================
+
+Bordered and Pulled Icons -
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Font Awesome Icons</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<!--Get your own code at fontawesome.com-->
+</head>
+<body>
+
+<i class="fas fa-quote-left fa-3x fa-pull-left fa-border"></i>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+</body>
+</html>
+
+==================================================================================================================
+
+
+** Bootstrap Icons
+===================
+
+
+To use the Bootstrap glyphicons, add the following line inside the <head> section of your HTML page:
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+Note: No downloading or installation is required!
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bootstrap Icons</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body class="container">
+
+<h1>Bootstrap icon library</h1>
+
+<p>Some Bootstrap icons:</p>
+<i class="glyphicon glyphicon-cloud"></i>
+<i class="glyphicon glyphicon-remove"></i>
+<i class="glyphicon glyphicon-user"></i>
+<i class="glyphicon glyphicon-envelope"></i>
+<i class="glyphicon glyphicon-thumbs-up"></i>
+<br><br>
+
+<p>Styled Bootstrap icons (size and color):</p>
+<i class="glyphicon glyphicon-cloud" style="font-size:24px;"></i>
+<i class="glyphicon glyphicon-cloud" style="font-size:36px;"></i>
+<i class="glyphicon glyphicon-cloud" style="font-size:48px;color:red;"></i>
+<i class="glyphicon glyphicon-cloud" style="font-size:60px;color:lightblue;"></i>
+
+</body>
+</html>
+
+
+==================================================================================================================
+
+** Google Icons -
+==================
+
+To use the Google icons, add the following line inside the <head> section of your HTML page:
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+Note: No downloading or installation is required!
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Google Icons</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+
+<h1>Google icon library</h1>
+
+<p>Some Google icons:</p>
+<i class="material-icons">cloud</i>
+<i class="material-icons">favorite</i>
+<i class="material-icons">attachment</i>
+<i class="material-icons">computer</i>
+<i class="material-icons">traffic</i>
+<br><br>
+
+<p>Styled Google icons (size and color):</p>
+<i class="material-icons" style="font-size:24px;">cloud</i>
+<i class="material-icons" style="font-size:36px;">cloud</i>
+<i class="material-icons" style="font-size:48px;color:red;">cloud</i>
+<i class="material-icons" style="font-size:60px;color:lightblue;">cloud</i>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

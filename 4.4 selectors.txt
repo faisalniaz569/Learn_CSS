@@ -1,0 +1,191 @@
+** CSS Pseudo-elements
+
+* What are Pseudo-Elements?
+
+=> A CSS pseudo-element is used to style specified parts of an element.
+
+For example, it can be used to:
+
+1) Style the first letter, or line, of an element.
+
+2) Insert content before, or after, the content of an element.
+
+
+selector::pseudo-element {
+  property: value;
+}
+
+The following example formats the first line of the text in all <p> elements:
+
+Example:
+
+Html:
+
+<p>You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p>
+
+Css:
+
+p::first-line {
+  color: #ff0000;
+  font-variant: small-caps;
+}
+
+
+The ::first-line, ::first-letter pseudo-element used in The following properties :
+
+font properties
+color properties
+background properties
+word-spacing
+letter-spacing
+text-decoration
+vertical-align
+text-transform
+line-height
+clear
+
+
+::first-line versus :first-line
+
+The double colon replaced the single-colon notation for pseudo-elements in CSS3.
+
+
+Example 2:
+
+Html:
+
+<p>You can use the ::first-letter pseudo-element to add a special effect to the first character of a text!</p>
+
+
+Css:
+
+p::first-letter {
+  color: #ff0000;
+  font-size: xx-large;
+}
+
+
+# Pseudo-elements and HTML Classes
+-----------------------------------
+
+Example 3:
+
+Html:
+
+<p class="intro">This is an introduction.</p>
+<p>This is a paragraph with some text. A bit more text even.</p>
+
+Css:
+
+p.intro::first-letter {
+  color: #ff0000;
+  font-size: 200%;
+}
+
+# Multiple Pseudo-elements
+---------------------------
+
+Example 4:
+
+Html:
+
+<p>You can combine the ::first-letter and ::first-line pseudo-elements to add a special effect to the first letter and the first line of a text!</p>
+
+Css:
+
+p::first-letter {
+  color: #ff0000;
+  font-size: xx-large;
+}
+
+p::first-line {
+  color: #0000ff;
+  font-variant: small-caps;
+}
+
+
+# The ::before Pseudo-element
+------------------------------
+
+Html:
+
+<h1>This is a heading</h1>
+
+Css:
+
+h1::before {
+    content: url(./img/smiley.gif);
+}
+
+
+# The ::after Pseudo-element
+------------------------------
+
+Html:
+
+<h1>This is a heading</h1>
+
+Css:
+
+h1::after {
+    content: url(./img/smiley.gif);
+}
+
+
+# The ::marker Pseudo-element
+------------------------------
+
+Html:
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<ol>
+  <li>First</li>
+  <li>Second</li>
+  <li>Third</li>
+</ol>
+
+
+Css:
+
+::marker { 
+  color: red;
+  font-size: 23px;
+}
+
+
+# The ::selection Pseudo-element
+---------------------------------
+
+Html:
+
+<h1>Select some text on this page:</h1>
+
+<p>This is a paragraph.</p>
+<div>This is some text in a div element.</div>
+
+Css:
+
+::selection {
+  color: red;
+  background: yellow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

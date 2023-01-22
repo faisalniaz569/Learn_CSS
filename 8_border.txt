@@ -1,0 +1,704 @@
+********************
+
+CHAPTER: 08
+
+********************
+
+## Border
+
+Example: (border)
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  border: 5px solid red;
+}
+
+h2 {
+  border: 4px dotted blue;
+}
+
+div {
+  border: double;
+}
+</style>
+</head>
+<body>
+
+<h1>A heading with a solid red border</h1>
+
+<h2>A heading with a dotted blue border</h2>
+
+<div>A div element with a double border.</div>
+
+</body>
+</html>
+
+
+Example 2: (border-style)
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}
+</style>
+</head>
+<body>
+
+<h2>The border-style Property</h2>
+<p>This property specifies what kind of border to display:</p>
+
+<p class="dotted">A dotted border.</p>
+<p class="dashed">A dashed border.</p>
+<p class="solid">A solid border.</p>
+<p class="double">A double border.</p>
+<p class="groove">A groove border.</p>
+<p class="ridge">A ridge border.</p>
+<p class="inset">An inset border.</p>
+<p class="outset">An outset border.</p>
+<p class="none">No border.</p>
+<p class="hidden">A hidden border.</p>
+<p class="mix">A mixed border.</p>
+
+</body>
+</html>
+
+
+** Border Width
+
+Example 3: (border-width)
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.one {
+  border-style: solid;
+  border-width: 5px;
+}
+
+p.two {
+  border-style: solid;
+  border-width: medium;
+}
+
+p.three {
+  border-style: dotted;
+  border-width: 2px;
+}
+
+p.four {
+  border-style: dotted;
+  border-width: thick;
+}
+
+p.five {
+  border-style: double;
+  border-width: 15px;
+}
+
+p.six {
+  border-style: double;
+  border-width: thick;
+}
+</style>
+</head>
+<body>
+
+<h2>The border-width Property</h2>
+<p>This property specifies the width of the four borders:</p>
+
+<p class="one">Some text.</p>
+<p class="two">Some text.</p>
+<p class="three">Some text.</p>
+<p class="four">Some text.</p>
+<p class="five">Some text.</p>
+<p class="six">Some text.</p>
+
+<p><b>Note:</b> The "border-width" property does not work if it is used alone. 
+Always specify the "border-style" property to set the borders first.</p>
+
+</body>
+</html>
+
+
+Example 4: (Specific Side Widths)
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.one {
+  border-style: solid;
+  border-width: 5px 20px; /* 5px top and bottom, 20px on the sides */
+}
+
+p.two {
+  border-style: solid;
+  border-width: 20px 5px; /* 20px top and bottom, 5px on the sides */
+}
+
+p.three {
+  border-style: solid;
+  border-width: 25px 10px 4px 35px; /* 25px top, 10px right, 4px bottom and 35px left */
+}
+</style>
+</head>
+<body>
+
+<h2>The border-width Property</h2>
+<p>The border-width property can have from one to four values (for the top border, right border, bottom border, and the left border):</p>
+
+<p class="one">Some text.</p>
+<p class="two">Some text.</p>
+<p class="three">Some text.</p>
+
+</body>
+</html>
+
+
+** Border Color
+
+Example 5: (border-color)
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.one {
+  border-style: solid;
+  border-color: red;
+}
+
+p.two {
+  border-style: solid;
+  border-color: green;
+} 
+
+p.three {
+  border-style: dotted;
+  border-color: blue;
+} 
+</style>
+</head>
+<body>
+
+<h2>The border-color Property</h2>
+<p>This property specifies the color of the four borders:</p>
+
+<p class="one">A solid red border</p>
+<p class="two">A solid green border</p>
+<p class="three">A dotted blue border</p>
+
+<p><b>Note:</b> The "border-color" property does not work if it is used alone. Use the "border-style" property to set the borders first.</p>
+
+</body>
+</html>
+
+or, 
+
+Example ** 
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  border-left-style: solid;
+  border-left-color: coral;
+}
+
+div {
+  border-style: solid;
+  border-left-color: coral;
+}
+</style>
+</head>
+<body>
+
+<h1>A heading with a colored left border</h1>
+
+<div>The border-left-color can be specified with a color name.</div>
+
+<p><strong>Note:</strong> Always declare the border-left-style or the border-style property before the border-left-color property. An element must have a border before you can change the color.</p>
+
+</body>
+</html>
+
+
+Example 6: (Specific Side Colors)
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.one {
+  border-style: solid;
+  border-color: red green blue yellow; /* red top, green right, blue bottom and yellow left */
+}
+</style>
+</head>
+<body>
+
+<h2>The border-color Property</h2>
+<p>The border-color property can have from one to four values (for the top border, right border, bottom border, and the left border):</p>
+
+<p class="one">A solid multicolor border</p>
+
+</body>
+</html>
+
+
+** we use border color in color name, hex, rgb, hsl value.
+
+border-color: red, / #ff0000; / rgb(255, 0, 0), /  hsl(0, 100%, 50%);
+
+
+
+*** Border - Individual Sides
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+  border-top-style: dotted;
+  border-right-style: solid;
+  border-bottom-style: dotted;
+  border-left-style: solid;
+}
+</style>
+</head>
+<body>
+
+<h2>Individual Border Sides</h2>
+<p>2 different border styles.</p>
+
+</body>
+</html>
+
+The example above gives the same result as this:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+  border-style: dotted solid;
+}
+</style>
+</head>
+<body>
+
+<h2>Individual Border Sides</h2>
+<p>2 different border styles.</p>
+
+</body>
+</html>
+
+## border-bottom-style: none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset|initial|inherit;
+
+
+Example 2:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  text-align: center;
+}
+/* Four values */
+p.four {
+  border-style: dotted solid double dashed;
+}
+
+/* Three values */
+p.three {
+  border-style: dotted solid double;
+}
+
+/* Two values */
+p.two {
+  border-style: dotted solid;
+}
+
+/* One value */
+p.one {
+  border-style: dotted;
+}
+</style>
+</head>
+<body>
+
+<h2>Individual Border Sides</h2>
+<p class="four">4 different border styles.</p>
+<p class="three">3 different border styles.</p>
+<p class="two">2 different border styles.</p>
+<p class="one">1 border style.</p>
+
+</body>
+</html>
+
+
+*** Border - Shorthand Property
+
+The border property is a shorthand property for the following individual border properties:
+
+border-width
+border-style (required)
+border-color
+
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+  border: 5px solid red;
+}
+</style>
+</head>
+<body>
+
+<h2>The border Property</h2>
+
+<p>This property is a shorthand property for border-width, border-style, and border-color.</p>
+
+</body>
+</html>
+
+
+You can also specify all the individual border properties for just one side:
+
+Example 2:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+  border-left: 6px solid red;
+  background-color: lightgrey;
+}
+</style>
+</head>
+<body>
+
+<h2>The border-left Property</h2>
+<p>This property is a shorthand property for border-left-width, border-left-style, and border-left-color.</p>
+
+</body>
+</html>
+
+
+Example 3:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+  border-bottom: 6px solid red;
+  background-color: lightgrey;
+}
+</style>
+</head>
+<body>
+
+<h2>The border-bottom Property</h2>
+<p>This property is a shorthand property for border-bottom-width, border-bottom-style, and border-bottom-color.</p>
+
+</body>
+</html>
+
+Here, border-top, border-right, border-bottom, border-left
+
+
+Example 4:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+}
+
+div {
+  border-style: solid;
+  border-bottom-width: thin;
+}
+</style>
+</head>
+<body>
+
+<h1>A heading with a thin bottom border</h1>
+
+<div>A div element with a thin bottom border.</div>
+
+<p><strong>Note:</strong> Always declare the border-bottom-style or the border-style property before the border-bottom-width property. An element must have a border before you can change the color.</p>
+
+</body>
+</html>
+
+
+
+** border-bottom-style: none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset|initial|inherit;
+
+** border-bottom-width: medium|thin|thick|length|initial|inherit;
+
+Here, border-top-width, border-right-width, border-bottom-width, border-left-width
+
+=========================================================================================================
+
+*** Rounded Borders
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.normal {
+  border: 2px solid red;
+  padding: 5px;
+}
+
+p.round1 {
+  border: 2px solid red;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+p.round2 {
+  border: 2px solid red;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+p.round3 {
+  border: 2px solid red;
+  border-radius: 12px;
+  padding: 5px;
+}
+</style>
+</head>
+<body>
+
+<h2>The border-radius Property</h2>
+<p>This property is used to add rounded borders to an element:</p>
+
+<p class="normal">Normal border</p>
+<p class="round1">Round border</p>
+<p class="round2">Rounder border</p>
+<p class="round3">Roundest border</p>
+
+</body>
+</html>
+
+*** border-bottom-color
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  border-bottom-style: solid;
+  border-bottom-color: coral;
+}
+
+div {
+  border-style: solid;
+  border-bottom-color: coral;
+}
+</style>
+</head>
+<body>
+
+<h1>A heading with a colored bottom border</h1>
+
+<div>The border-bottom-color can be specified with a color name.</div>
+
+<p><strong>Note:</strong> Always declare the border-bottom-style or the border-style property before the border-bottom-color property. An element must have a border before you can change the color.</p>
+
+</body>
+</html>
+
+Example 2:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color:#E7E9EB;
+}
+#myDIV {
+  width:100%;
+  height:300px;
+  background-color:#FFFFFF;
+  border-bottom:5px solid;
+  border-bottom-color: transparent;  
+}
+</style>
+</head>
+<body>
+
+<h1>The border-bottom-color Property</h1>
+
+<div id="myDIV">
+A demonstration on how to set the bottom border color.
+</div>
+
+</body>
+</html>
+
+** we use border bottom color in color name, hex, rgb, hsl, rgba, hsla value.
+
+=============================================================================================================
+
+## Border-top
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  border-top: 5px solid red;
+}
+
+h2 {
+  border-top: 4px dotted blue;
+}
+
+div {
+  border-top: double;
+}
+</style>
+</head>
+<body>
+
+<h1>A heading with a solid red top border</h1>
+
+<h2>A heading with a dotted blue top border</h2>
+
+<div>A div element with a double top border.</div>
+
+</body>
+</html>
+
+==========================================================================================================
+
+## border-top-color
+
+border-top-color: color|transparent|initial|inherit;
+
+Here, border-top-color, border-right-color, border-bottom-color, border-left-color
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  border-left-style: solid;
+  border-left-color: coral;
+}
+
+div {
+  border-style: solid;
+  border-left-color: coral;
+}
+</style>
+</head>
+<body>
+
+<h1>A heading with a colored left border</h1>
+
+<div>The border-left-color can be specified with a color name.</div>
+
+<p><strong>Note:</strong> Always declare the border-left-style or the border-style property before the border-left-color property. An element must have a border before you can change the color.</p>
+
+</body>
+</html>
+
+** color in hex, rgb, rgba, hsl, hsla, transparent
+
+
+# border-right-style
+
+border-right-style: none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset|initial|inherit;
+
+Here, border-top-style, border-right-style, border-bottom-style, border-left-style
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  border-top-style: dotted;
+}
+
+div {
+  border-style: solid;
+  border-top-style: dotted;
+}
+</style>
+</head>
+<body>
+
+<h1>A heading with a dotted top border</h1>
+
+<div>A div element with a dotted top border.</div>
+
+</body>
+</html>
+
+========================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

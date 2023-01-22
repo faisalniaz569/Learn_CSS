@@ -1,0 +1,275 @@
+********************
+
+CHAPTER: 31
+
+********************
+
+** lists
+
+In HTML, there are two main types of lists:
+
+unordered lists (<ul>) - the list items are marked with bullets
+ordered lists (<ol>) - the list items are marked with numbers or letters
+
+
+The CSS list properties allow you to:
+
+Set different list item markers for ordered lists
+Set different list item markers for unordered lists
+Set an image as the list item marker
+Add background colors to lists and list items
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul.a {
+  list-style-type: circle;
+}
+
+ul.b {
+  list-style-type: square;
+}
+
+ol.c {
+  list-style-type: upper-roman;
+}
+
+ol.d {
+  list-style-type: lower-alpha;
+}
+</style>
+</head>
+<body>
+
+<h2>The list-style-type Property</h2>
+
+<p>Example of unordered lists:</p>
+<ul class="a">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+<ul class="b">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+<p>Example of ordered lists:</p>
+<ol class="c">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="d">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+</body>
+</html>
+
+
+Example 2:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-image: url('img/sqpurple.gif');
+}
+</style>
+</head>
+<body>
+
+<h2>The list-style-image Property</h2>
+
+<p>The list-style-image property specifies an image as the list item marker:</p>
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+</body>
+</html>
+
+
+================================================================================================================
+
+The list-style-position Property:
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul.a {
+  list-style-position: outside;
+}
+
+ul.b {
+  list-style-position: inside;
+}
+</style>
+</head>
+<body>
+
+<h1>The list-style-position Property</h1>
+
+<h2>list-style-position: outside (default):</h2>
+<ul class="a">
+  <li>Coffee - A brewed drink prepared from roasted coffee beans, which are the seeds of berries from the Coffea plant</li>
+  <li>Tea - An aromatic beverage commonly prepared by pouring hot or boiling water over cured leaves of the Camellia sinensis, an evergreen shrub (bush) native to Asia</li>
+  <li>Coca Cola - A carbonated soft drink produced by The Coca-Cola Company. The drink's name refers to two of its original ingredients, which were kola nuts (a source of caffeine) and coca leaves</li>
+</ul>
+
+<h2>list-style-position: inside:</h2>
+<ul class="b">
+  <li>Coffee - A brewed drink prepared from roasted coffee beans, which are the seeds of berries from the Coffea plant</li>
+  <li>Tea - An aromatic beverage commonly prepared by pouring hot or boiling water over cured leaves of the Camellia sinensis, an evergreen shrub (bush) native to Asia</li>
+  <li>Coca Cola - A carbonated soft drink produced by The Coca-Cola Company. The drink's name refers to two of its original ingredients, which were kola nuts (a source of caffeine) and coca leaves</li>
+</ul>
+
+</body>
+</html>
+
+
+** list-style-type: none;
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul.demo {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+</style>
+</head>
+<body>
+
+<p>Default list:</p>
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+<p>Remove bullets, margin and padding from list:</p>
+<ul class="demo">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+</body>
+</html>
+
+
+================================================================================================================
+
+List - Shorthand property:
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style: square inside url("sqpurple.gif");
+}
+</style>
+</head>
+<body>
+
+<h2>The list-style Property</h2>
+
+<p>The list-style property is a shorthand property, which is used to set all the list properties in one declaration.</p>
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+</body>
+</html>
+
+
+================================================================================================================
+
+** Styling List With Colors
+
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ol {
+  background: #ff9999;
+  padding: 20px;
+}
+
+ul {
+  background: #3399ff;
+  padding: 20px;
+}
+
+ol li {
+  background: #ffe5e5;
+  color: darkred;
+  padding: 5px;
+  margin-left: 35px;
+}
+
+ul li {
+  background: #cce5ff;
+  color: darkblue;
+  margin: 5px;
+}
+</style>
+</head>
+<body>
+
+<h1>Styling Lists With Colors</h1>
+
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

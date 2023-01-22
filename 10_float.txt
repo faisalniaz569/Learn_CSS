@@ -1,0 +1,319 @@
+********************
+
+CHAPTER: 10
+
+********************
+
+## Float
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+  float: right;
+}
+</style>
+</head>
+<body>
+
+<h2>Float Right</h2>
+
+<p>In this example, the image will float to the right in the paragraph, and the text in the paragraph will wrap around the image.</p>
+
+<p><img src="img/pineapple.jpg" alt="Pineapple" style="width:170px;height:170px;margin-left:15px;">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+
+</body>
+</html>
+
+
+Example 2:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+  float: left;
+}
+</style>
+</head>
+<body>
+
+<h2>Float Left</h2>
+
+<p>In this example, the image will float to the left in the paragraph, and the text in the paragraph will wrap around the image.</p>
+
+<p><img src="img/pineapple.jpg" alt="Pineapple" style="width:170px;height:170px;margin-right:15px;">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+
+</body>
+</html>
+
+
+Example 3:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+  float: none;
+}
+</style>
+</head>
+<body>
+
+<h2>Float None</h2>
+
+<p>In this example, the image will be displayed just where it occurs in the text (float: none;).</p>
+
+<p><img src="img/pineapple.jpg" alt="Pineapple" style="width:170px;height:170px;">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+
+</body>
+</html>
+
+
+Example 4:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  float: left;
+  padding: 15px;
+}
+
+.div1 {
+  background: red;
+}
+
+.div2 {
+  background: yellow;
+}
+
+.div3 {
+  background: green;
+}
+</style>
+</head>
+<body>
+
+<h2>Float Next To Each Other</h2>
+
+<p>In this example, the three divs will float next to each other.</p>
+
+<div class="div1">Div 1</div>
+<div class="div2">Div 2</div>
+<div class="div3">Div 3</div>
+
+</body>
+</html>
+
+
+Example 5:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
+<h2>Grid of Boxes</h2>
+<p>Float boxes side by side:</p>
+
+<div class="clearfix">
+  <div class="box" style="background-color:#bbb">
+  <p>Some text inside the box.</p>
+  </div>
+  <div class="box" style="background-color:#ccc">
+  <p>Some text inside the box.</p>
+  </div>
+  <div class="box" style="background-color:#ddd">
+  <p>Some text inside the box.</p>
+  </div>
+</div>
+
+<p><strong>Note:</strong> Here, we use the clearfix hack to take care of the layout flow.
+We also use the box-sizing property to make sure that the box doesn't break due to extra padding. Try to remove this code to see the effect.</p>
+
+</body>
+</html>
+
+
+Example 6:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.img-container {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
+<h2>Images Side by Side</h2>
+<p>Float images side by side:</p>
+
+<div class="clearfix">
+  <div class="img-container">
+  <img src="img/img_5terre.jpg" alt="Italy" style="width:100%">
+  </div>
+  <div class="img-container">
+  <img src="img/img_forest.jpg" alt="Forest" style="width:100%">
+  </div>
+  <div class="img-container">
+  <img src="img/img_mountains.jpg" alt="Mountains" style="width:100%">
+  </div>
+</div>
+
+<p>Note that we also use the clearfix hack to take care of the layout flow, and that we add the box-sizing property to make sure that the image container doesn't break due to extra padding. Try to remove this code to see the effect.</p>
+
+</body>
+</html>
+
+
+Example 7:
+
+* float and equal height
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  width: 50%;
+  padding: 50px;
+  height: 300px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
+<h2>Equal Height Boxes</h2>
+<p>Floating boxes with equal heights:</p>
+
+<div class="clearfix">
+  <div class="box" style="background-color:#bbb">
+  <h2>Box 1</h2>
+  <p>Some content, some content, some content</p>
+  </div>
+  <div class="box" style="background-color:#ccc">
+  <h2>Box 2</h2>
+  <p>Some content, some content, some content</p>
+  <p>Some content, some content, some content</p>
+  <p>Some content, some content, some content</p>
+  </div>
+</div>
+
+<p>This example not very flexible. It is ok to use CSS height if you can guarantee that the boxes will always have the same amount of content in them, but that's not always the case. If you try the example above on a mobile phone (or resize the browser window), you will see that the second box's content will be displayed outside of the box.</p>
+<p>Go back to the tutorial and find another solution, if this is not what you want.</p>
+
+</body>
+</html>
+
+
+Example 8:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+span {
+  float: left;
+  width: 0.7em;
+  font-size: 400%;
+  font-family: algerian, courier;
+  line-height: 80%;
+}
+</style>
+</head>
+<body>
+
+<p><span>T</span>his is some text.
+This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+</p>
+
+<p>In the paragraph above, the first letter of the text is embedded in a span element. The span element has a width that is 0.7 times the size of the current font. The font-size of the span element is 400% (quite large) and the line-height is 80%. The font of the letter in the span will be in "Algerian".</p>
+
+</body>
+</html>
+
+
+Example 9:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+  float: left;
+}
+
+p.clear {
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<img src="img/w3css.gif" width="100" height="132">
+<p>This is some text. This is some text. This is some text. This is some text. This is some text. This is some text.</p>
+<p class="clear">This is also some text. This is also some text. This is also some text. This is also some text. This is also some text. This is also some text.</p>
+<p><strong>Remove the "clear" class to see the effect.</strong></p>
+
+</body>
+</html>

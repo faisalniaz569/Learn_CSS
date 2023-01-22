@@ -1,0 +1,65 @@
+********************
+
+CHAPTER: 15
+
+********************
+
+1) list-style-type
+
+list-style-type:
+
+disc
+square
+circle
+armenian
+cjk-ideographic
+decimal
+decimal-leading-zero (01, 02, 03 etc.)
+georgian
+hebrew
+hiragana
+hiragana-iroha
+katakana
+katakana-iroha
+lower-alpha (a, b, c)
+upper-alpha (A, B, C)
+lower-greek
+upper-greek
+lower-latin (a, b, c)
+upper-latin
+lower-roman (i, ii, iii, iv, v, etc.)
+upper-roman(I, II, III, IV, V, etc.)
+
+=======================================================================================================
+
+** list-style
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul  {
+  list-style: square inside url("img/sqpurple.gif");
+}
+</style>
+</head>
+<body>
+
+<h1>The list-style Property</h1>
+
+<p>The list-style is a shorthand property for all the list properties.</p>
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+</body>
+</html>
+
+shorthand property:
+
+list-style: list-style-type list-style-position list-style-image|initial|inherit;

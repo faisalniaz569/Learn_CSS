@@ -1,0 +1,447 @@
+********************
+
+CHAPTER: 49
+
+********************
+
+## Shadows effect
+
+In these chapters you will learn about the following properties:
+
+1) text-shadow, 2) box-shadow
+
+** CSS Text Shadow
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  text-shadow: 2px 2px;
+}
+</style>
+</head>
+<body>
+
+<h1>Text-shadow effect!</h1>
+
+</body>
+</html>
+
+
+Next, add a color to the shadow:
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  text-shadow: 2px 2px red;
+}
+</style>
+</head>
+<body>
+
+<h1>Text-shadow effect!</h1>
+
+</body>
+</html>
+
+
+Then, add a blur effect to the shadow:
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  text-shadow: 2px 2px 5px red;
+}
+</style>
+</head>
+<body>
+
+<h1>Text-shadow effect!</h1>
+
+</body>
+</html>
+
+
+** The following example shows a white text with black shadow:
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+</style>
+</head>
+<body>
+
+<h1>Text-shadow effect!</h1>
+
+</body>
+</html>
+
+
+
+
+The following example shows a red neon glow shadow:
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  text-shadow: 0 0 3px #FF0000;
+}
+</style>
+</head>
+<body>
+
+<h1>Text-shadow with red neon glow!</h1>
+
+</body>
+</html>
+
+
+## Multiple Shadows
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+</style>
+</head>
+<body>
+
+<h1>Text-shadow with red and blue neon glow!</h1>
+
+</body>
+</html>
+
+
+## The following example shows a white text with black, blue, and darkblue shadow:
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+</style>
+</head>
+<body>
+
+<h1>Text-shadow effect!</h1>
+
+</body>
+</html>
+
+
+** You can also use the text-shadow property to create a plain border around some text (without shadows):
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  color: coral;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+</style>
+</head>
+<body>
+
+<h1>Border around text!</h1>
+
+</body>
+</html>
+
+===============================================================================================================
+
+** box-shadow
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 300px;
+  height: 100px;
+  padding: 15px;
+  background-color: coral;
+  box-shadow: 10px 10px;
+}
+</style>
+</head>
+<body>
+
+<h1>The box-shadow Property</h1>
+
+<div>This is a div element with a box-shadow</div>
+
+</body>
+</html>
+
+
+
+Specify a Color for the Shadow
+
+Example 2:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 300px;
+  height: 100px;
+  padding: 15px;
+  background-color: coral;
+  box-shadow: 10px 10px lightblue;
+}
+</style>
+</head>
+<body>
+
+<h1>The box-shadow Property</h1>
+
+<div>A div element with a lightblue box-shadow</div>
+
+</body>
+</html>
+
+
+** Add a Blur Effect to the Shadow
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 300px;
+  height: 100px;
+  padding: 15px;
+  background-color: coral;
+  box-shadow: 10px 10px 5px lightblue;
+}
+</style>
+</head>
+<body>
+
+<h1>The box-shadow Property</h1>
+
+<div>A div element with a 5px blurred, lightblue box-shadow.</div>
+
+</body>
+</html>
+
+
+** Set the Spread Radius of the Shadow
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 300px;
+  height: 100px;
+  padding: 15px;
+  background-color: coral;
+  box-shadow: 10px 10px 5px 12px lightblue;
+}
+</style>
+</head>
+<body>
+
+<h1>The box-shadow Property</h1>
+
+<div>A div element with a blurred, lightblue box-shadow, with a spread radius of 12px.</div>
+
+</body>
+</html>
+
+
+** Set the inset Parameter
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 300px;
+  height: 100px;
+  padding: 15px;
+  background-color: coral;
+  box-shadow: 10px 10px 5px lightblue inset;
+}
+</style>
+</head>
+<body>
+
+<h1>The box-shadow Property</h1>
+
+<div>A div element with a blurred, lightblue, inset box-shadow.</div>
+
+</body>
+</html>
+
+
+** Add Multiple Shadows
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#example1 {
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green;
+  margin: 20px;
+}
+
+#example2 {
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 5px 8px blue, 10px 10px 8px red, 15px 15px 8px green;
+  margin: 20px;
+}
+</style>
+</head>
+<body>
+
+<h1>Multiple Shadows</h1>
+
+<div id="example1">
+  <h2>Multiple shadows</h2>
+  <p>box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green:</p>
+</div>
+<br>
+
+<div id="example2">
+  <h2>Multiple shadows with blur effect</h2>
+  <p>box-shadow: 5px 5px 8px blue, 10px 10px 8px red, 15px 15px 8px green:</p>
+</div>
+
+</body>
+</html>
+
+
+================================================================================================================
+
+## Cards
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.card {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+div.header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  font-size: 40px;
+}
+
+div.container {
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+
+<h1>Create Cards</h1>
+
+<p>The box-shadow property can be used to create paper-like cards:</p>
+
+<div class="card">
+  <div class="header">
+    <h1>1</h1>
+  </div>
+
+  <div class="container">
+    <p>January 1, 2021</p>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+Example 2:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.polaroid {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+div.container {
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+
+<h1>Create Polaroid Images</h1>
+
+<p>The box-shadow property can be used to create polaroid images:</p>
+
+<div class="polaroid">
+  <img src="rock600x400.jpg" alt="Norway" style="width:100%">
+  <div class="container">
+    <p>Hardanger, Norway</p>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+

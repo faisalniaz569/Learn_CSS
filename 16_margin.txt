@@ -1,0 +1,191 @@
+********************
+
+CHAPTER: 16
+
+********************
+
+** margin-top
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.ex1 {
+  margin-top: 25px;
+}
+</style>
+</head>
+<body>
+
+<h1>The margin-top Property</h1>
+
+<p>A paragraph with no margins specified.</p>
+<p class="ex1">A paragraph with a 25 pixels top margin.</p>
+<p>A paragraph with no margins specified.</p>
+
+</body>
+</html>
+
+** margin-right
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.ex1 {
+  margin-right: 150px;
+}
+</style>
+</head>
+<body>
+
+<h1>The margin-right Property</h1>
+
+<p>A paragraph with no margins specified. A paragraph with no margins specified. A paragraph with no margins specified.</p>
+<p class="ex1">A paragraph with a 150 pixels right margin. A paragraph with a 150 pixels right margin. A paragraph with a 150 pixels right margin.</p>
+<p>A paragraph with no margins specified. A paragraph with no margins specified. A paragraph with no margins specified.</p>
+
+</body>
+</html>
+
+** margin-bottom
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.ex1 {
+  margin-bottom: 25px;
+}
+</style>
+</head>
+<body>
+
+<h1>The margin-bottom Property</h1>
+
+<p>A paragraph with no margins specified.</p>
+<p class="ex1">A paragraph with a 25 pixels bottom margin.</p>
+<p>A paragraph with no margins specified.</p>
+
+</body>
+</html>
+
+** margin-left:
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.ex1 {
+  margin-left: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>The margin-left Property</h1>
+
+<p>A paragraph with no margins specified.</p>
+<p class="ex1">A paragraph with a 30pixels left margin.</p>
+<p>A paragraph with no margins specified.</p>
+
+</body>
+</html>
+
+==============================================================================================================
+
+
+** Margin
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.ex1 {
+  margin: 35px;
+}
+</style>
+</head>
+<body>
+
+<h1>The margin Property</h1>
+
+<p>A paragraph with no specified margins.</p>
+<p class="ex1">This paragraph has a margin of 35 pixels on all four sides.</p>
+<p>A paragraph with no specified margins.</p>
+
+</body>
+</html>
+
+Here, margin 35px is all side 35px.
+
+margin: length|auto|initial|inherit;
+
+Here, length (Specifies a margin in px, pt, cm, etc. Default value is 0. Negative values are allowed.),
+% (Specifies a margin in percent of the width of the containing element).
+auto (The browser calculates a margin)
+
+The margin property sets following this way:
+
+margin-top
+margin-right
+margin-bottom
+margin-left
+
+
+If the margin property has four values:
+
+margin: 10px 5px 15px 20px;
+
+top margin is 10px
+right margin is 5px
+bottom margin is 15px
+left margin is 20px
+
+==============================================================================================================
+
+** Margin Collapse
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  margin: 0 0 50px 0;
+}
+
+h2 {
+  margin: 20px 0 0 0;
+}
+</style>
+</head>
+<body>
+
+<p>In this example the h1 element has a bottom margin of 50px and the h2 element has a top margin of 20px. So, the vertical margin between h1 and h2 should have been 70px (50px + 20px). However, due to margin collapse, the actual margin ends up being 50px.</p>
+
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
